@@ -163,10 +163,10 @@ bot.on("message", async message => {
 		let embed = new Discord.RichEmbed()
 		.setTitle("Bot Help")
 		.setColor("#256645")
-		.addField(">help", "Brings up the help page you're reading")
-		.addField(">offenses", "Loads a list of all the recognized offenses")
-		.addField(">botinfo", "Displays general information about the bot")
-		.addField(">report <player> <offense> [notes] <evidence>", "Submit a report for the given player.Notes are optional")
+		.addField("!help", "Brings up the help page you're reading")
+		.addField("!offenses", "Loads a list of all the recognized offenses")
+		.addField("!botinfo", "Displays general information about the bot")
+		.addField("!report <player> <offense> [notes] <evidence>", "Submit a report for the given player.Notes are optional")
 		.addField("Still need help?", "Send a message to hello2248 for further assistance!");
 		if(!message.channel.type == "dm");
 			message.delete();
