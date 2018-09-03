@@ -1,4 +1,4 @@
-const botconfig = require("./botconfig.json");
+//const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const infractions = ["HACKS", "ADVERTISING", "MUTE EVADING", "INAPPROPRIATE NAME", "INAPPROPRIATE SKIN", "INAPPROPRIATE NICKNAME", "IRL SCAMMING", "SCAMMING", "INAPPROPRIATE ITEM", "INAPPROPRIATE LINK", "THREATS", "HARRASMENT", "INAPPROPRIATE BEHAVIOR", "CROSS TEAMING",
@@ -49,7 +49,7 @@ bot.on("messageReactionAdd", async (reaction, user) => {
 
 bot.on("message", async message => {
 	//try{
-	let prefix = botconfig.prefix;
+	let prefix = ">";
 	let messageArray = message.content.split(" ");
 	let cmd = messageArray[0];
 	let args = messageArray.slice(1)//.join(" ").split(", ");
