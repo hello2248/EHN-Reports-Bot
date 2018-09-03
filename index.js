@@ -2,9 +2,9 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const infractions = ["HACKS", "ADVERTISING", "MUTE EVADING", "INAPPROPRIATE NAME", "INAPPROPRIATE SKIN", "INAPPROPRIATE NICKNAME", "IRL SCAMMING", "SCAMMING", "INAPPROPRIATE ITEM", "INAPPROPRIATE LINK", "THREATS", "HARRASMENT", "INAPPROPRIATE BEHAVIOR", "CROSS TEAMING",
-	"INAPPROPRIATE BUILDING", "TRAPPING", "BUG EXPLOITATION", "DOX", "DDOS"];
-const punishmentTime = ["31d", "", "1d", "", "", "1d", "", "3d", "1d", "31d", "7d", "3d", "3d", "1d", "31d", "3d", "31d", "", ""];
-const banType = ["ip", "ip", "ip", "", "", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip"];
+	"INAPPROPRIATE BUILDING", "TRAPPING", "BUG EXPLOITATION", "DOX", "DDOS", "DOX/DDOS THREATS";
+const punishmentTime = ["31d", "", "1d", "", "", "1d", "", "3d", "1d", "31d", "7d", "3d", "3d", "1d", "31d", "3d", "31d", "", "", "", ""];
+const banType = ["ip", "ip", "ip", "", "", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip", "ip"];
 
 bot.on("ready", async () => {
 	console.log(`${bot.user.username} is online`);
